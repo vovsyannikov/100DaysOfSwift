@@ -29,7 +29,13 @@
                             <constraint firstItem="LQa-hi-PDx" firstAttribute="leading" secondItem="11q-jR-E6P" secondAttribute="leading" id="iOe-ga-6w1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="never" id="6Xk-CR-BMx"/>
+                    <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="never" id="6Xk-CR-BMx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="7Tb-h2-bEt">
+                            <connections>
+                                <action selector="shareActionTriggered:" destination="oWp-Yx-Ort" id="WfI-up-vqe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="LQa-hi-PDx" id="pBw-XP-tD5"/>
                     </connections>
@@ -45,7 +51,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="Pdo-Jd-1Aw">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" textLabel="nTo-7H-bvH" style="IBUITableViewCellStyleDefault" id="UdU-rZ-SsZ">
                                 <rect key="frame" x="20" y="38" width="362" height="43.666667938232422"/>
@@ -97,6 +103,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

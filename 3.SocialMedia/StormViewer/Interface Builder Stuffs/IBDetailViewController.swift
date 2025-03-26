@@ -12,6 +12,7 @@ final class IBDetailViewController: UIViewController {
 
 	var selectedImage: String?
 
+	// MARK: - Lifecycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -32,5 +33,20 @@ final class IBDetailViewController: UIViewController {
 		super.viewWillDisappear(animated)
 
 		navigationController?.hidesBarsOnTap = false
+	}
+
+	// MARK: - Actions
+	@IBAction func shareActionTriggered(_ sender: UIBarButtonItem) {
+		guard let image = imageView.image?.jpegData(compressionQuality: 0.8)
+		else {
+			print("No picture found")
+			return
+		}
+
+		let vc = UIActivityViewController(activityItems: [image],
+										  applicationActivities: [])
+
+		vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+		present(vc, animated: true)
 	}
 }
