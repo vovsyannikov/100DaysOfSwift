@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AE688732D942819007A4694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE688692D942819007A4694 /* AppDelegate.swift */; };
 		1AE688742D942819007A4694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE688702D942819007A4694 /* SceneDelegate.swift */; };
-		1AE688752D942819007A4694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE688712D942819007A4694 /* ViewController.swift */; };
+		1AE688752D942819007A4694 /* IBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE688712D942819007A4694 /* IBViewController.swift */; };
 		1AE688762D942819007A4694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE6886A2D942819007A4694 /* Assets.xcassets */; };
 		1AE688782D942819007A4694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE6886D2D942819007A4694 /* LaunchScreen.storyboard */; };
 		1AE688792D942819007A4694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE6886F2D942819007A4694 /* Main.storyboard */; };
@@ -23,8 +23,16 @@
 		1AE6886C2D942819007A4694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AE6886E2D942819007A4694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AE688702D942819007A4694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1AE688712D942819007A4694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AE688712D942819007A4694 /* IBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1AE6887D2D942C72007A4694 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1AE6883E2D9427FD007A4694 /* Frameworks */ = {
@@ -57,10 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				1AE6887A2D94281F007A4694 /* App */,
+				1AE6887D2D942C72007A4694 /* Extensions */,
 				1AE6886A2D942819007A4694 /* Assets.xcassets */,
 				1AE6886D2D942819007A4694 /* LaunchScreen.storyboard */,
 				1AE6886F2D942819007A4694 /* Main.storyboard */,
-				1AE688712D942819007A4694 /* ViewController.swift */,
+				1AE688712D942819007A4694 /* IBViewController.swift */,
 			);
 			path = WebBrowser;
 			sourceTree = "<group>";
@@ -89,6 +98,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1AE6887D2D942C72007A4694 /* Extensions */,
 			);
 			name = WebBrowser;
 			packageProductDependencies = (
@@ -151,7 +163,7 @@
 			files = (
 				1AE688732D942819007A4694 /* AppDelegate.swift in Sources */,
 				1AE688742D942819007A4694 /* SceneDelegate.swift in Sources */,
-				1AE688752D942819007A4694 /* ViewController.swift in Sources */,
+				1AE688752D942819007A4694 /* IBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
