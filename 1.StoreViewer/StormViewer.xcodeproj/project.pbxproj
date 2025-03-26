@@ -6,12 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A8D8B392D93FD1E00E19429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D8B262D93FD1E00E19429 /* Assets.xcassets */; };
+		1A8D8B3B2D93FD1E00E19429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D8B292D93FD1E00E19429 /* LaunchScreen.storyboard */; };
+		1A8D8B5F2D94058800E19429 /* IBDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D8B5A2D94058800E19429 /* IBDetailViewController.swift */; };
+		1A8D8B602D94058800E19429 /* IBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D8B5B2D94058800E19429 /* IBViewController.swift */; };
+		1A8D8B612D94058800E19429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D8B5D2D94058800E19429 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1A8D8ADD2D93FBFD00E19429 /* StormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8D8B262D93FD1E00E19429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A8D8B282D93FD1E00E19429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A8D8B5A2D94058800E19429 /* IBDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDetailViewController.swift; sourceTree = "<group>"; };
+		1A8D8B5B2D94058800E19429 /* IBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBViewController.swift; sourceTree = "<group>"; };
+		1A8D8B5C2D94058800E19429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1A8D8AEF2D93FBFD00E19429 /* Exceptions for "StormViewer" folder in "StormViewer" target */ = {
+		1A8D8B412D93FD2D00E19429 /* Exceptions for "App" folder in "StormViewer" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,12 +34,17 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1A8D8ADF2D93FBFD00E19429 /* StormViewer */ = {
+		1A8D8B402D93FD2D00E19429 /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1A8D8AEF2D93FBFD00E19429 /* Exceptions for "StormViewer" folder in "StormViewer" target */,
+				1A8D8B412D93FD2D00E19429 /* Exceptions for "App" folder in "StormViewer" target */,
 			);
-			path = StormViewer;
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A8D8B4C2D93FDB600E19429 /* Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +63,7 @@
 		1A8D8AD42D93FBFD00E19429 = {
 			isa = PBXGroup;
 			children = (
-				1A8D8ADF2D93FBFD00E19429 /* StormViewer */,
+				1A8D8B2E2D93FD1E00E19429 /* StormViewer */,
 				1A8D8ADE2D93FBFD00E19429 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +74,28 @@
 				1A8D8ADD2D93FBFD00E19429 /* StormViewer.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A8D8B2E2D93FD1E00E19429 /* StormViewer */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D8B402D93FD2D00E19429 /* App */,
+				1A8D8B292D93FD1E00E19429 /* LaunchScreen.storyboard */,
+				1A8D8B5E2D94058800E19429 /* Interface Builder Stuffs */,
+				1A8D8B4C2D93FDB600E19429 /* Content */,
+				1A8D8B262D93FD1E00E19429 /* Assets.xcassets */,
+			);
+			path = StormViewer;
+			sourceTree = "<group>";
+		};
+		1A8D8B5E2D94058800E19429 /* Interface Builder Stuffs */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D8B5D2D94058800E19429 /* Main.storyboard */,
+				1A8D8B5B2D94058800E19429 /* IBViewController.swift */,
+				1A8D8B5A2D94058800E19429 /* IBDetailViewController.swift */,
+			);
+			path = "Interface Builder Stuffs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,7 +114,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1A8D8ADF2D93FBFD00E19429 /* StormViewer */,
+				1A8D8B402D93FD2D00E19429 /* App */,
+				1A8D8B4C2D93FDB600E19429 /* Content */,
 			);
 			name = StormViewer;
 			packageProductDependencies = (
@@ -122,6 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8D8B392D93FD1E00E19429 /* Assets.xcassets in Resources */,
+				1A8D8B612D94058800E19429 /* Main.storyboard in Resources */,
+				1A8D8B3B2D93FD1E00E19429 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +176,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8D8B5F2D94058800E19429 /* IBDetailViewController.swift in Sources */,
+				1A8D8B602D94058800E19429 /* IBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A8D8B292D93FD1E00E19429 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A8D8B282D93FD1E00E19429 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1A8D8B5D2D94058800E19429 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A8D8B5C2D94058800E19429 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A8D8AF12D93FBFD00E19429 /* Debug */ = {
@@ -147,7 +212,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StormViewer/Info.plist;
+				INFOPLIST_FILE = StormViewer/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -175,7 +240,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StormViewer/Info.plist;
+				INFOPLIST_FILE = StormViewer/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
