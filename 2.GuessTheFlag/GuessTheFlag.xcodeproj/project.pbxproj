@@ -6,30 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A8D8B9F2D94137600E19429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D8B942D94137600E19429 /* AppDelegate.swift */; };
+		1A8D8BA02D94137600E19429 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D8B962D94137600E19429 /* SceneDelegate.swift */; };
+		1A8D8BA12D94137600E19429 /* IBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D8B9D2D94137600E19429 /* IBViewController.swift */; };
+		1A8D8BA32D94137600E19429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D8B982D94137600E19429 /* Assets.xcassets */; };
+		1A8D8BA42D94137600E19429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D8B9A2D94137600E19429 /* LaunchScreen.storyboard */; };
+		1A8D8BA52D94137600E19429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8D8B9C2D94137600E19429 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1A8D8B6B2D94131F00E19429 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8D8B942D94137600E19429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A8D8B952D94137600E19429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8D8B962D94137600E19429 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A8D8B982D94137600E19429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A8D8B992D94137600E19429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A8D8B9B2D94137600E19429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A8D8B9D2D94137600E19429 /* IBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1A8D8B7D2D94132100E19429 /* Exceptions for "GuessTheFlag" folder in "GuessTheFlag" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 1A8D8B6A2D94131F00E19429 /* GuessTheFlag */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1A8D8B6D2D94131F00E19429 /* GuessTheFlag */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				1A8D8B7D2D94132100E19429 /* Exceptions for "GuessTheFlag" folder in "GuessTheFlag" target */,
-			);
-			path = GuessTheFlag;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A8D8B682D94131F00E19429 /* Frameworks */ = {
@@ -45,7 +40,7 @@
 		1A8D8B622D94131F00E19429 = {
 			isa = PBXGroup;
 			children = (
-				1A8D8B6D2D94131F00E19429 /* GuessTheFlag */,
+				1A8D8B9E2D94137600E19429 /* GuessTheFlag */,
 				1A8D8B6C2D94131F00E19429 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +51,28 @@
 				1A8D8B6B2D94131F00E19429 /* GuessTheFlag.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A8D8B972D94137600E19429 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D8B942D94137600E19429 /* AppDelegate.swift */,
+				1A8D8B962D94137600E19429 /* SceneDelegate.swift */,
+				1A8D8B952D94137600E19429 /* Info.plist */,
+				1A8D8B9A2D94137600E19429 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A8D8B9E2D94137600E19429 /* GuessTheFlag */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D8B972D94137600E19429 /* App */,
+				1A8D8B9C2D94137600E19429 /* Main.storyboard */,
+				1A8D8B9D2D94137600E19429 /* IBViewController.swift */,
+				1A8D8B982D94137600E19429 /* Assets.xcassets */,
+			);
+			path = GuessTheFlag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +89,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1A8D8B6D2D94131F00E19429 /* GuessTheFlag */,
 			);
 			name = GuessTheFlag;
 			packageProductDependencies = (
@@ -122,6 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8D8BA32D94137600E19429 /* Assets.xcassets in Resources */,
+				1A8D8BA42D94137600E19429 /* LaunchScreen.storyboard in Resources */,
+				1A8D8BA52D94137600E19429 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +149,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8D8B9F2D94137600E19429 /* AppDelegate.swift in Sources */,
+				1A8D8BA02D94137600E19429 /* SceneDelegate.swift in Sources */,
+				1A8D8BA12D94137600E19429 /* IBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A8D8B9A2D94137600E19429 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A8D8B992D94137600E19429 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1A8D8B9C2D94137600E19429 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A8D8B9B2D94137600E19429 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A8D8B7F2D94132100E19429 /* Debug */ = {
@@ -147,12 +186,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuessTheFlag/Info.plist;
+				INFOPLIST_FILE = GuessTheFlag/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -175,12 +215,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuessTheFlag/Info.plist;
+				INFOPLIST_FILE = GuessTheFlag/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
