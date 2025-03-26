@@ -39,7 +39,13 @@
                             <outlet property="delegate" destination="2hO-Ph-6bD" id="fQS-WI-wrK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qbn-nh-EP0"/>
+                    <navigationItem key="navigationItem" id="qbn-nh-EP0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="B2u-JA-OQa">
+                            <connections>
+                                <action selector="addActionTriggered:" destination="2hO-Ph-6bD" id="dST-ru-LYr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyR-R0-WG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +72,7 @@
     </scenes>
     <resources>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
