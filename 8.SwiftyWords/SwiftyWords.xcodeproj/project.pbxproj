@@ -13,6 +13,8 @@
 		1A2DF5E32D95B15000BF3D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2DF5D72D95B15000BF3D69 /* Assets.xcassets */; };
 		1A2DF5E52D95B15000BF3D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2DF5DA2D95B15000BF3D69 /* LaunchScreen.storyboard */; };
 		1A2DF5E62D95B15000BF3D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2DF5DC2D95B15000BF3D69 /* Main.storyboard */; };
+		1A2DF5EA2D95BC3000BF3D69 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A2DF5E82D95BC3000BF3D69 /* level1.txt */; };
+		1A2DF5EB2D95BC3000BF3D69 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A2DF5E92D95BC3000BF3D69 /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1A2DF5DB2D95B15000BF3D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A2DF5DD2D95B15000BF3D69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A2DF5DE2D95B15000BF3D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A2DF5E82D95BC3000BF3D69 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		1A2DF5E92D95BC3000BF3D69 /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				1A2DF5DA2D95B15000BF3D69 /* LaunchScreen.storyboard */,
 				1A2DF5DC2D95B15000BF3D69 /* Main.storyboard */,
 				1A2DF5DE2D95B15000BF3D69 /* ViewController.swift */,
+				1A2DF5E82D95BC3000BF3D69 /* level1.txt */,
+				1A2DF5E92D95BC3000BF3D69 /* level2.txt */,
 			);
 			path = SwiftyWords;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 				1A2DF5E32D95B15000BF3D69 /* Assets.xcassets in Resources */,
 				1A2DF5E52D95B15000BF3D69 /* LaunchScreen.storyboard in Resources */,
 				1A2DF5E62D95B15000BF3D69 /* Main.storyboard in Resources */,
+				1A2DF5EA2D95BC3000BF3D69 /* level1.txt in Resources */,
+				1A2DF5EB2D95BC3000BF3D69 /* level2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
