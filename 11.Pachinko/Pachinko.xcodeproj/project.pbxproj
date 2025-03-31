@@ -6,28 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		1A5122EA2D9ACF5D00DA126C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5122E02D9ACF5D00DA126C /* AppDelegate.swift */; };
-		1A5122EB2D9ACF5D00DA126C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5122E72D9ACF5D00DA126C /* SceneDelegate.swift */; };
-		1A5122EC2D9ACF5D00DA126C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5122E82D9ACF5D00DA126C /* ViewController.swift */; };
-		1A5122ED2D9ACF5D00DA126C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5122E12D9ACF5D00DA126C /* Assets.xcassets */; };
-		1A5122EF2D9ACF5D00DA126C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5122E42D9ACF5D00DA126C /* LaunchScreen.storyboard */; };
-		1A5122F02D9ACF5D00DA126C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5122E62D9ACF5D00DA126C /* Main.storyboard */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		1A5122B82D9ACF2B00DA126C /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A5122E02D9ACF5D00DA126C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A5122E12D9ACF5D00DA126C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A5122E22D9ACF5D00DA126C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A5122E32D9ACF5D00DA126C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A5122E52D9ACF5D00DA126C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A5122E72D9ACF5D00DA126C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A5122E82D9ACF5D00DA126C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A5123362D9AD38D00DA126C /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1A5123382D9AD38D00DA126C /* Pachinko */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Pachinko;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		1A5122B52D9ACF2B00DA126C /* Frameworks */ = {
+		1A5123332D9AD38D00DA126C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,209 +29,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A5122AF2D9ACF2B00DA126C = {
+		1A51232D2D9AD38D00DA126C = {
 			isa = PBXGroup;
 			children = (
-				1A5122E92D9ACF5D00DA126C /* Pachinko */,
-				1A5122B92D9ACF2B00DA126C /* Products */,
+				1A5123382D9AD38D00DA126C /* Pachinko */,
+				1A5123372D9AD38D00DA126C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A5122B92D9ACF2B00DA126C /* Products */ = {
+		1A5123372D9AD38D00DA126C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A5122B82D9ACF2B00DA126C /* Pachinko.app */,
+				1A5123362D9AD38D00DA126C /* Pachinko.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1A5122E92D9ACF5D00DA126C /* Pachinko */ = {
-			isa = PBXGroup;
-			children = (
-				1A5122F12D9ACF6400DA126C /* App */,
-				1A5122E12D9ACF5D00DA126C /* Assets.xcassets */,
-				1A5122E42D9ACF5D00DA126C /* LaunchScreen.storyboard */,
-				1A5122E62D9ACF5D00DA126C /* Main.storyboard */,
-				1A5122E82D9ACF5D00DA126C /* ViewController.swift */,
-			);
-			path = Pachinko;
-			sourceTree = "<group>";
-		};
-		1A5122F12D9ACF6400DA126C /* App */ = {
-			isa = PBXGroup;
-			children = (
-				1A5122E02D9ACF5D00DA126C /* AppDelegate.swift */,
-				1A5122E72D9ACF5D00DA126C /* SceneDelegate.swift */,
-				1A5122E22D9ACF5D00DA126C /* Info.plist */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A5122B72D9ACF2B00DA126C /* Pachinko */ = {
+		1A5123352D9AD38D00DA126C /* Pachinko */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A5122CB2D9ACF2D00DA126C /* Build configuration list for PBXNativeTarget "Pachinko" */;
+			buildConfigurationList = 1A51234D2D9AD38E00DA126C /* Build configuration list for PBXNativeTarget "Pachinko" */;
 			buildPhases = (
-				1A5122B42D9ACF2B00DA126C /* Sources */,
-				1A5122B52D9ACF2B00DA126C /* Frameworks */,
-				1A5122B62D9ACF2B00DA126C /* Resources */,
+				1A5123322D9AD38D00DA126C /* Sources */,
+				1A5123332D9AD38D00DA126C /* Frameworks */,
+				1A5123342D9AD38D00DA126C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				1A5123382D9AD38D00DA126C /* Pachinko */,
+			);
 			name = Pachinko;
 			packageProductDependencies = (
 			);
 			productName = Pachinko;
-			productReference = 1A5122B82D9ACF2B00DA126C /* Pachinko.app */;
+			productReference = 1A5123362D9AD38D00DA126C /* Pachinko.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A5122B02D9ACF2B00DA126C /* Project object */ = {
+		1A51232E2D9AD38D00DA126C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					1A5122B72D9ACF2B00DA126C = {
+					1A5123352D9AD38D00DA126C = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 1A5122B32D9ACF2B00DA126C /* Build configuration list for PBXProject "Pachinko" */;
+			buildConfigurationList = 1A5123312D9AD38D00DA126C /* Build configuration list for PBXProject "Pachinko" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1A5122AF2D9ACF2B00DA126C;
+			mainGroup = 1A51232D2D9AD38D00DA126C;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1A5122B92D9ACF2B00DA126C /* Products */;
+			productRefGroup = 1A5123372D9AD38D00DA126C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A5122B72D9ACF2B00DA126C /* Pachinko */,
+				1A5123352D9AD38D00DA126C /* Pachinko */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A5122B62D9ACF2B00DA126C /* Resources */ = {
+		1A5123342D9AD38D00DA126C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A5122ED2D9ACF5D00DA126C /* Assets.xcassets in Resources */,
-				1A5122EF2D9ACF5D00DA126C /* LaunchScreen.storyboard in Resources */,
-				1A5122F02D9ACF5D00DA126C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A5122B42D9ACF2B00DA126C /* Sources */ = {
+		1A5123322D9AD38D00DA126C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A5122EA2D9ACF5D00DA126C /* AppDelegate.swift in Sources */,
-				1A5122EB2D9ACF5D00DA126C /* SceneDelegate.swift in Sources */,
-				1A5122EC2D9ACF5D00DA126C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		1A5122E42D9ACF5D00DA126C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A5122E32D9ACF5D00DA126C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1A5122E62D9ACF5D00DA126C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A5122E52D9ACF5D00DA126C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		1A5122CC2D9ACF2D00DA126C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q66LD4VF2K;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pachinko/App/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.t3rr4.Pachinko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Debug;
-		};
-		1A5122CD2D9ACF2D00DA126C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q66LD4VF2K;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pachinko/App/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.t3rr4.Pachinko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Release;
-		};
-		1A5122CE2D9ACF2D00DA126C /* Debug */ = {
+		1A51234B2D9AD38E00DA126C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		1A5122CF2D9ACF2D00DA126C /* Release */ = {
+		1A51234C2D9AD38E00DA126C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,28 +244,88 @@
 			};
 			name = Release;
 		};
+		1A51234E2D9AD38E00DA126C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q66LD4VF2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t3rr4.Pachinko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1A51234F2D9AD38E00DA126C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q66LD4VF2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.t3rr4.Pachinko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A5122B32D9ACF2B00DA126C /* Build configuration list for PBXProject "Pachinko" */ = {
+		1A5123312D9AD38D00DA126C /* Build configuration list for PBXProject "Pachinko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A5122CE2D9ACF2D00DA126C /* Debug */,
-				1A5122CF2D9ACF2D00DA126C /* Release */,
+				1A51234B2D9AD38E00DA126C /* Debug */,
+				1A51234C2D9AD38E00DA126C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A5122CB2D9ACF2D00DA126C /* Build configuration list for PBXNativeTarget "Pachinko" */ = {
+		1A51234D2D9AD38E00DA126C /* Build configuration list for PBXNativeTarget "Pachinko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A5122CC2D9ACF2D00DA126C /* Debug */,
-				1A5122CD2D9ACF2D00DA126C /* Release */,
+				1A51234E2D9AD38E00DA126C /* Debug */,
+				1A51234F2D9AD38E00DA126C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1A5122B02D9ACF2B00DA126C /* Project object */;
+	rootObject = 1A51232E2D9AD38D00DA126C /* Project object */;
 }
