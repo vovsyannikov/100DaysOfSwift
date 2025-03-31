@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HvS-16-mqt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yHc-Ng-7BB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HvS-16-mqt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="H9C-rT-QCj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4aX-mA-vOB" kind="relationship" relationship="rootViewController" id="ND4-aw-bHY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIm-bP-EaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+        <!--Names to Faces-->
+        <scene sceneID="USK-dR-WTV">
+            <objects>
+                <collectionViewController id="4aX-mA-vOB" customClass="IBViewController" customModule="NamesToFaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cMZ-qB-asi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6P5-ef-wq7">
+                            <size key="itemSize" width="140" height="180"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Person" id="O5W-Jo-P7f" customClass="IBPersonCollectionViewCell" customModule="NamesToFaces" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="140" height="175.66666666666666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PWh-0b-ouv">
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="175.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BQl-yR-VAq">
+                                            <rect key="frame" x="10" y="10" width="120" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="kFi-H3-t5U"/>
+                                                <constraint firstAttribute="width" secondItem="BQl-yR-VAq" secondAttribute="height" multiplier="1:1" id="pxk-4F-MIU"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEJ-jC-v8l">
+                                            <rect key="frame" x="10" y="144" width="120" height="17.666666666666657"/>
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rEJ-jC-v8l" firstAttribute="top" secondItem="BQl-yR-VAq" secondAttribute="bottom" constant="14" id="Kmb-ZR-wVr"/>
+                                        <constraint firstItem="BQl-yR-VAq" firstAttribute="top" secondItem="PWh-0b-ouv" secondAttribute="top" constant="10" id="hEj-v4-ZHb"/>
+                                        <constraint firstAttribute="bottom" secondItem="rEJ-jC-v8l" secondAttribute="bottom" constant="14" id="pyb-bV-6r9"/>
+                                        <constraint firstAttribute="trailing" secondItem="rEJ-jC-v8l" secondAttribute="trailing" constant="10" id="rOm-Rn-c85"/>
+                                        <constraint firstItem="rEJ-jC-v8l" firstAttribute="leading" secondItem="PWh-0b-ouv" secondAttribute="leading" constant="10" id="scG-ST-bkE"/>
+                                        <constraint firstItem="BQl-yR-VAq" firstAttribute="leading" secondItem="PWh-0b-ouv" secondAttribute="leading" constant="10" id="uaW-5O-zBS"/>
+                                        <constraint firstAttribute="trailing" secondItem="BQl-yR-VAq" secondAttribute="trailing" constant="10" id="xfi-7x-Fza"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="imageView" destination="BQl-yR-VAq" id="H8y-vI-M1M"/>
+                                    <outlet property="nameLabel" destination="rEJ-jC-v8l" id="oJg-x9-wKP"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="4aX-mA-vOB" id="vSK-ba-xT1"/>
+                            <outlet property="delegate" destination="4aX-mA-vOB" id="DTP-FS-Wcu"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Names to Faces" id="cca-pp-0iY"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hi8-tQ-JF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="tableCellGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
