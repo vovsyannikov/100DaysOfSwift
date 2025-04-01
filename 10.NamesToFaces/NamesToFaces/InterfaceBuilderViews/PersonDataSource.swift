@@ -11,7 +11,7 @@ enum PersonSection: Hashable {
 	case all
 }
 
-struct Person: Hashable {
+struct Person: Hashable, Codable {
 	var name: String
 	var image: String
 }

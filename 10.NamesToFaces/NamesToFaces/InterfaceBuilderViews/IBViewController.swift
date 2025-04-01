@@ -10,7 +10,8 @@ import UIKit
 class IBViewController: UICollectionViewController {
 
 	private var dataSource: UICollectionViewDiffableDataSource<PersonSection, Person>!
-	private var persons: [Person] = [] {
+	private let kPeople = "people"
+	private var people: [Person] = [] {
 		didSet {
 			updateDataSource()
 		}
@@ -19,9 +20,20 @@ class IBViewController: UICollectionViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
+		setupDataSource()
 		setupCollectionView()
 		setupActions()
-		setupDataSource()
+
+		loadPeople()
+	}
+
+	private func loadPeople() {
+		guard
+			let peopleData = UserDefaults.standard.data(forKey: kPeople),
+			let	people = try? JSONDecoder().decode([Person].self, from: peopleData)
+		else { return }
+
+		self.people = people
 	}
 
 	private func setupCollectionView() {
@@ -37,7 +49,8 @@ class IBViewController: UICollectionViewController {
 		dataSource = .init(collectionView: collectionView) { collectionView, indexPath, person in
 			let cell = collectionView.dequeue(reusable: IBPersonCollectionViewCell.self, for: indexPath)
 			let imageURL = FileManager.default.documentsDirectory.appending(path: person.image)
-			
+
+			print(cell.intrinsicContentSize)
 			cell.name = person.name
 			cell.image = UIImage(contentsOfFile: imageURL.path)
 
@@ -48,9 +61,16 @@ class IBViewController: UICollectionViewController {
 	private func updateDataSource() {
 		var snapshot = dataSource.newSnapshot()
 		snapshot.appendSections([.all])
-		snapshot.appendItems(persons, toSection: .all)
+		snapshot.appendItems(people, toSection: .all)
 
 		dataSource.apply(snapshot, animatingDifferences: true)
+	}
+
+	private func save() {
+		guard let savedData = try? JSONEncoder().encode(people)
+		else { fatalError("Failed to encode people array") }
+
+		UserDefaults.standard.set(savedData, forKey: kPeople)
 	}
 
 	// MARK: - Actions
@@ -72,12 +92,12 @@ extension IBViewController {
 		let saveAction = UIAlertAction(title: "Save", style: .default) { [weak self, weak alertController] _ in
 			guard
 				let newName = alertController?.textFields?[0].text,
-				var person = self?.persons[indexPath.item]
+				var person = self?.people[indexPath.item]
 			else { return }
 
 			person.name = newName
-			self?.persons[indexPath.item] = person
-			self?.updateDataSource()
+			self?.people[indexPath.item] = person
+			self?.save()
 		}
 		alertController.addAction(saveAction)
 
@@ -103,7 +123,8 @@ extension IBViewController: UIImagePickerControllerDelegate, UINavigationControl
 		try? jpegData.write(to: imagePath)
 
 		let person = Person(name: "Unknown", image: imageName)
-		persons.append(person)
+		people.append(person)
+		save()
 
 		picker.dismiss(animated: true)
 	}
