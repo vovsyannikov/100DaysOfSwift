@@ -16,6 +16,8 @@
 		1ACE8C7F2D9DA64C0055F2EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE8C6F2D9DA64C0055F2EC /* AppDelegate.swift */; };
 		1ACE8C802D9DA64C0055F2EC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE8C722D9DA64C0055F2EC /* GameScene.swift */; };
 		1ACE8C812D9DA64C0055F2EC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE8C732D9DA64C0055F2EC /* GameViewController.swift */; };
+		1ACE8C832D9DAA760055F2EC /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE8C822D9DAA760055F2EC /* WhackSlot.swift */; };
+		1ACE8C852D9DB88D0055F2EC /* PenguinType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE8C842D9DB88D0055F2EC /* PenguinType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		1ACE8C732D9DA64C0055F2EC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1ACE8C742D9DA64C0055F2EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ACE8C762D9DA64C0055F2EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ACE8C822D9DAA760055F2EC /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		1ACE8C842D9DB88D0055F2EC /* PenguinType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +76,11 @@
 			children = (
 				1ACE8C6E2D9DA64C0055F2EC /* Sounds */,
 				1ACE8C6F2D9DA64C0055F2EC /* AppDelegate.swift */,
+				1ACE8C732D9DA64C0055F2EC /* GameViewController.swift */,
 				1ACE8C712D9DA64C0055F2EC /* GameScene.sks */,
 				1ACE8C722D9DA64C0055F2EC /* GameScene.swift */,
-				1ACE8C732D9DA64C0055F2EC /* GameViewController.swift */,
+				1ACE8C822D9DAA760055F2EC /* WhackSlot.swift */,
+				1ACE8C842D9DB88D0055F2EC /* PenguinType.swift */,
 				1ACE8C752D9DA64C0055F2EC /* LaunchScreen.storyboard */,
 				1ACE8C772D9DA64C0055F2EC /* Main.storyboard */,
 				1ACE8C702D9DA64C0055F2EC /* Assets.xcassets */,
@@ -161,6 +167,8 @@
 			files = (
 				1ACE8C7F2D9DA64C0055F2EC /* AppDelegate.swift in Sources */,
 				1ACE8C802D9DA64C0055F2EC /* GameScene.swift in Sources */,
+				1ACE8C852D9DB88D0055F2EC /* PenguinType.swift in Sources */,
+				1ACE8C832D9DAA760055F2EC /* WhackSlot.swift in Sources */,
 				1ACE8C812D9DA64C0055F2EC /* GameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
