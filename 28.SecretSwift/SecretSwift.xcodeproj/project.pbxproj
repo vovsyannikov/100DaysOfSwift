@@ -148,6 +148,7 @@
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecretSwift/Resources/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Identify yourself";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -176,6 +177,7 @@
 				DEVELOPMENT_TEAM = Q66LD4VF2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecretSwift/Resources/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Identify yourself";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
